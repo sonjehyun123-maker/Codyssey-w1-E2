@@ -1,0 +1,55 @@
+{
+    "quizzes": [
+        {
+            "question": "2+2=?",
+            "choices": [
+                "2",
+                "1",
+                "4",
+                "3"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "대한민국 수도는?",
+            "choices": [
+                "서울",
+                "광주",
+                "부산",
+                "대구"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "파이썬 창시자는?",
+            "choices": [
+                "Jobs",
+                "Guido",
+                "Elon",
+                "Bill"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "CPU는?",
+            "choices": [
+                "중앙처리장치",
+                "RAM",
+                "GPU",
+                "SSD"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "HTML은?",
+            "choices": [
+                "마크업 언어",
+                "OS",
+                "프로그래밍",
+                "DB"
+            ],
+            "answer": 1
+        }
+    ],
+    "best_score": 0
+}
