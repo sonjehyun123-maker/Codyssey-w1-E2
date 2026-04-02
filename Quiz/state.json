@@ -3,53 +3,63 @@
         {
             "question": "2+2=?",
             "choices": [
-                "2",
-                "1",
                 "4",
+                "1",
+                "2",
                 "3"
-            ],
-            "answer": 3
-        },
-        {
-            "question": "대한민국 수도는?",
-            "choices": [
-                "서울",
-                "광주",
-                "부산",
-                "대구"
             ],
             "answer": 1
         },
         {
+            "question": "대한민국 수도는?",
+            "choices": [
+                "광주",
+                "부산",
+                "서울",
+                "대구"
+            ],
+            "answer": 3
+        },
+        {
             "question": "파이썬 창시자는?",
             "choices": [
-                "Jobs",
+                "Bill",
                 "Guido",
-                "Elon",
-                "Bill"
+                "Jobs",
+                "Elon"
             ],
             "answer": 2
         },
         {
             "question": "CPU는?",
             "choices": [
-                "중앙처리장치",
-                "RAM",
+                "SSD",
                 "GPU",
-                "SSD"
+                "RAM",
+                "중앙처리장치"
             ],
-            "answer": 1
+            "answer": 4
         },
         {
             "question": "HTML은?",
             "choices": [
+                "DB",
                 "마크업 언어",
                 "OS",
-                "프로그래밍",
-                "DB"
+                "프로그래밍"
             ],
-            "answer": 1
+            "answer": 2
+        },
+        {
+            "question": "1+1",
+            "choices": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "answer": 2
         }
     ],
-    "best_score": 0
+    "best_score": 5
 }
