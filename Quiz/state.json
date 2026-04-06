@@ -49,17 +49,7 @@
                 "DB"
             ],
             "answer": 3
-        },
-        {
-            "question": "1+1",
-            "choices": [
-                "3",
-                "2",
-                "5",
-                "4"
-            ],
-            "answer": 2
         }
     ],
-    "best_score": 6
+    "best_score": 0
 }

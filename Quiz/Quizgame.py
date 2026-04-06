@@ -2,31 +2,34 @@ import json, os, random
 from Quiz import Quiz
 from utils import get_int
 
-STATE = "state.json"
+STATE = "state.json" #저장파일
 
 class QuizGame:
     def __init__(self):
-        self.quizzes = []
-        self.best_score = 0
-        self.load()
+        self.quizzes = []   #퀴즈 목록
+        self.best_score = 0 #최고점수
+        self.load()         #시작 시 데이터를 가져옴.
 
     def load(self):
         try:
+            # 파일 없으면 초기 데이터 생성
             if not os.path.exists(STATE):
                 self._init_data()
                 return
-
+            #JSON파일 생성
             with open(STATE, encoding="utf-8") as f:
                 data = json.load(f)
-
+            # JSON → 객체 변환
             self.quizzes = [Quiz.from_dict(q) for q in data.get("quizzes", [])]
             self.best_score = data.get("best_score", 0)
 
         except:
+            # 파일 깨지면 초기화
             print("파일 손상 → 초기화")
             self._init_data()
 
     def save(self):
+        # 객체 → JSON 저장        
         data = {
             "quizzes": [q.to_dict() for q in self.quizzes],
             "best_score": self.best_score
@@ -66,7 +69,7 @@ class QuizGame:
                 self.save()
                 print("종료")
                 break
-
+# 퀴즈 진행
     def play(self):
         if not self.quizzes:
             print("퀴즈 없음")
@@ -78,8 +81,8 @@ class QuizGame:
         score = 0
 
         for q in selected:
-            q.shuffle_choices()
-            q.display()
+            q.shuffle_choices() #rand%
+            q.display()         #출력
 
             ans = get_int("답: ", 1, 4)
 
@@ -90,12 +93,12 @@ class QuizGame:
                 print(f"오답 (정답: {q.answer})")
 
         print(f"점수: {score}/{count}")
-
+#현 스코어 > 최고 스코어
         if score > self.best_score:
             self.best_score = score
             print("최고 점수 갱신")
             self.save()
-
+#문제 추가
     def add(self):
         question = input("문제: ").strip()
 
@@ -114,7 +117,7 @@ class QuizGame:
         self.save()
 
         print("추가 완료")
-
+#퀴즈 목록 출력
     def show(self):
         if not self.quizzes:
             print("퀴즈 없음")
