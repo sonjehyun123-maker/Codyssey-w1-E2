@@ -97,3 +97,37 @@ if __name__ == "__main__":
         self.load()         #시작 시 데이터를 가져옴.
     ```
 
+## 파일입출력
+ - 파일을 열고, 읽고, 쓰는 기본 과정
+    - 열기: content = f.read()
+    - 읽기: f = open("파일명", "명령")
+        - r: 읽기 / w : 쓰기 / a : 추가
+    - 쓰기: f = open("data.txt", "w")
+            f.write("hello")
+ - JSON 형식이 무엇이고, 왜 데이터 저장에 사용
+    - JSON: 데이터를 구조화해서 저장하는 텍스트
+    - 사용 이유 1. 구조유지 / 2. 파일로 저장 가능 / 3. 다양한언어에서 사용 가능
+ - try/except 필요 이유
+    - 오류로 인한 프로그램 중단 방지 및 흐름 유지, 데이터 손상 방지
+
+## Git기초
+ - Git이란? : 파일 변경내용 관리도구
+ - GIit명령어
+    - init :
+    - add : 
+    - commit : 
+    - push: github에 commit 한 내용을 올림
+    - pull: github에서 commit 한 내용을 내려받음
+    - checkout:
+    - clone: 
+ - 브랜치 : 작업 흐름을 분리하는 독립된 작업라인.
+    - main안정 but 새로운 기능 추가!
+    -   main:     A --- B --- C
+                         \
+        feature:          D --- E
+    - 브랜치 사용 순서
+        1) git branch feature / 생성
+        2) git switch feature / main->feature로 변경
+        3) git switch main / feature->main으로 변경
+        4) git merge feature / main+faeture해서 새로운 커밋 생성.
+ - 원격저장소를 clone하고 pull로 변경사항 적용
