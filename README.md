@@ -112,14 +112,14 @@ if __name__ == "__main__":
 
 ## Git기초
  - Git이란? : 파일 변경내용 관리도구
- - GIit명령어
-    - init :
-    - add : 
-    - commit : 
+ - Git명령어
+    - init : git 저장소 초기화
+    - add : 새롭게 업데이트된 파일을 스테이징 영역에 올림
+    - commit : 스테이징 파일을 로컬 저장소에 저장함 (+꼬리표)
     - push: github에 commit 한 내용을 올림
     - pull: github에서 commit 한 내용을 내려받음
-    - checkout:
-    - clone: 
+    - checkout: 다른 브랜치로 이동하거나 특정 시점 파일 복구시 사용
+    - clone: github에서 프로그램을 불러옴 git clone github주소 
  - 브랜치 : 작업 흐름을 분리하는 독립된 작업라인.
     - main안정 but 새로운 기능 추가!
     -   main:     A --- B --- C
