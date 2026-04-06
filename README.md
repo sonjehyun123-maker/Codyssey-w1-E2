@@ -129,5 +129,5 @@ if __name__ == "__main__":
         1) git branch feature / 생성
         2) git switch feature / main->feature로 변경
         3) git switch main / feature->main으로 변경
-        4) git merge feature / main+faeture해서 새로운 커밋 생성.
+        4) git merge feature / main + faeture해서 새로운 커밋 생성.
  - 원격저장소를 clone하고 pull로 변경사항 적용
