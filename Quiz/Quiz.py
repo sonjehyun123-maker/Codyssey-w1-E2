@@ -4,9 +4,9 @@ class Quiz:
 # 문제, 선택지, 정답 저장
     def __init__(self, question, choices, answer):
 
-        self.question = question
-        self.choices = choices
-        self.answer = answer
+        self.question = question # 퀴즈 데이터 저장 //play, show
+        self.choices = choices # 최고점수 비교 갱신
+        self.answer = answer 
 #문제 출력
     def display(self):
         print(f"\nQ. {self.question}")

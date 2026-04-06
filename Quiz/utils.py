@@ -17,7 +17,7 @@ def get_int(prompt, min_v, max_v):
         # 숫자가 아닐 경우
         except ValueError:
             print("숫자만 입력")
-
+        #사용자가 Ctrl + c를 누르거나 Ctul + d를 누르면 출력
         except (KeyboardInterrupt, EOFError):
             print("\n안전 종료 중...")
             raise

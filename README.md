@@ -80,19 +80,20 @@ if __name__ == "__main__":
     - for : 정해진 횟수까지 반복
     - while : 정해진 조건까지 반복
  - 함수를 정의하고, 매개변수와 반환값을 활용
+    - 함수 정의 
+        - def main():dsply(self): save(self): load(self) run(self), play(self), add(self), show(self) etc...
+    - 매개변수와 반환값 활용
+        - Quiz생성: Quiz(question, choices, answer)
 
 ## 클래스와 객체
- - 클래스란?
+ - 클래스란? : 데어터 속성 + 데이터를 다루는 매서드
  - __init__ 메서드와 self의 역할
- - 클래스의 속성과 메서드를 정의하고 활용
+    - __init__역할 : 생성된 객체 초기화, 초기 값 설정.
+    - self역할 : QizeGame내 속성과 메서드에 접근할수 있게함.
+    ```QuizGame
+        def __init__(self):
+        self.quizzes = []   #퀴즈 목록
+        self.best_score = 0 #최고점수
+        self.load()         #시작 시 데이터를 가져옴.
+    ```
 
-## 파일입출력
- - 파일을 열고, 읽고, 쓰는 기본 과정
- - JSON 형식이 무엇이고, 왜 데이터 저장에 사용
- - try/except를 사용하여 오류를 처리
-
-## Git기초
- - Git이란?
- - init, add, commit, push, pull, checkout, clone
- - 브랜치 생성, 병합
- - 원격저장소를 clone하고 pull로 변경사항 적
