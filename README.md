@@ -125,6 +125,7 @@ if __name__ == "__main__":
     -   main:     A --- B --- C
                          \
         feature:          D --- E
+        
     - 브랜치 사용 순서
         1) git branch feature / 생성
         2) git switch feature / main->feature로 변경
