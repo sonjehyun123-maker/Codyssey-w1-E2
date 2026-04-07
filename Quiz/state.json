@@ -1,54 +1,54 @@
 {
     "quizzes": [
         {
-            "question": "2+2=?",
+            "question": "버그(Bug)라는 용어의 실제 유래는?",
             "choices": [
-                "1",
-                "3",
-                "2",
-                "4"
+                "벌레처럼 작아서",
+                "시스템을 갉아먹어서",
+                "개발자가 벌레를 싫어해서",
+                "실제 벌레가 기계에 끼어서"
             ],
             "answer": 4
         },
         {
-            "question": "대한민국 수도는?",
+            "question": "파이썬 이름의 유래는?",
             "choices": [
-                "광주",
-                "대구",
-                "서울",
-                "부산"
+                "고대도시이름",
+                "그리스로마신화",
+                "영국 코미디 그룹",
+                "미국 미식축구팀"
             ],
             "answer": 3
         },
         {
             "question": "파이썬 창시자는?",
             "choices": [
-                "Bill",
-                "Jobs",
+                "Guido",
                 "Elon",
-                "Guido"
+                "Bill",
+                "Jobs"
             ],
-            "answer": 4
+            "answer": 1
         },
         {
-            "question": "CPU는?",
+            "question": "Java와 JavaScript의 관계는?",
             "choices": [
-                "SSD",
-                "RAM",
-                "GPU",
-                "중앙처리장치"
+                "아무관련 없음",
+                "부모 자식관계",
+                "웹 전용 자바버전",
+                "같은 회사 제품"
             ],
-            "answer": 4
+            "answer": 1
         },
         {
-            "question": "HTML은?",
+            "question": "1GB는 몇 MB인가요?",
             "choices": [
-                "OS",
-                "프로그래밍",
-                "마크업 언어",
-                "DB"
+                "1024",
+                "1000",
+                "1111",
+                "1234"
             ],
-            "answer": 3
+            "answer": 1
         }
     ],
     "best_score": 0
