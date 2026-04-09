@@ -183,8 +183,8 @@ if __name__ == "__main__":
 
  ## 체크리스트
     []GitHub에 코드가 업로드되어 있고 10개 이상의 의미 있는 커밋이 존재
+        ![](./images/commit.png)
         - https://github.com/sonjehyun123-maker/Codyssey-w1-E2
-        - 
     []커밋을 어떤 단위로 나누었고, 커밋 메시지 규칙
         초반에는 커밋을 시간 단위로 무분별하게 기록하고, 메시지 또한 의미 없이 작성하였다.
         이후에는 커밋 단위를 하나의 기능 구현 또는 변경 사항 단위로 명확히 나누었으며, 
@@ -228,9 +228,15 @@ if __name__ == "__main__":
         정답 채점 기준 변경   |      Quiz.check()
         -----------------------------------------------------
 
-    []clone/pull 스크린샷 필요.
+    []clone/pull
         - git clone (github주소)
-
+        
+        - git pull origin main
+        ```
+        From https://github.com/sonjehyun123-maker/Codyssey-w1-E2
+        * branch            main       -> FETCH_HEAD
+        Already up to date.
+        ```
     [] “입력 처리”, “게임 진행”, “데이터 저장/불러오기” 로직을 어떤 기준으로 분리했는지 설명할 수 있는가?
         - 분리 기준: 하나의 파일/클래스가 하나의 역할만 갖도록 함
         - main.py       : 게임 진입점 / 실행
