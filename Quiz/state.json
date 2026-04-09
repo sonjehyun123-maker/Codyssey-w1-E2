@@ -33,12 +33,12 @@
         {
             "question": "Java와 JavaScript의 관계는?",
             "choices": [
+                "웹 전용 자바버전",
                 "아무관련 없음",
                 "부모 자식관계",
-                "웹 전용 자바버전",
                 "같은 회사 제품"
             ],
-            "answer": 1
+            "answer": 2
         },
         {
             "question": "1GB는 몇 MB인가요?",
@@ -51,5 +51,5 @@
             "answer": 1
         }
     ],
-    "best_score": 0
+    "best_score": 1
 }
