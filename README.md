@@ -135,7 +135,7 @@ if __name__ == "__main__":
  - 클래스란? : 데어터 속성 + 데이터를 다루는 매서드
  - __init__ 메서드와 self의 역할
     - __init__역할 : 생성된 객체 초기화, 초기 값 설정.
-    - self역할 : QizeGame내 속성과 메서드에 접근할수 있게함.
+    - self 역할 : QizeGame내 속성과 메서드에 접근할수 있게함.
     ```QuizGame
         def __init__(self):
         self.quizzes = []   #퀴즈 목록
