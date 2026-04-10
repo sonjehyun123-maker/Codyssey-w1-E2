@@ -18,15 +18,15 @@ class Quiz:
         return self.answer == user
 
 #정답 ,선택지 rand%
-    def shuffle_choices(self):
-        indexed = list(enumerate(self.choices))
-        random.shuffle(indexed)
+    def shuffle_choices(self): #
+        indexed = list(enumerate(self.choices)) #각 선택지 섞은 번호 리스트
+        random.shuffle(indexed) #번호 붙은 선택지를 섞음.
 
-        self.choices = [c for _, c in indexed]
+        self.choices = [c for _, c in indexed]  #섞은 선택지를 다시 self.choices로 만듬.
         #정답위치 다시 계산
         for new_idx, (old_idx, _) in enumerate(indexed):
-            if old_idx + 1 == self.answer:
-                self.answer = new_idx + 1
+            if old_idx + 1 == self.answer: # 이 선택지가 원래 정답이었는지 확인
+                self.answer = new_idx + 1 #새로운 정답 저장
                 break
 
 # JSON 저장용 변환

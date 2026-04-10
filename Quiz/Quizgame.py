@@ -7,7 +7,7 @@ STATE = "state.json" #저장파일
 class QuizGame:
     def __init__(self):
         self.quizzes = []   #퀴즈 목록
-        self.best_score = 0 #최고점수
+        self.best_score = 0 #최고 점수
         self.load()         #시작 시 데이터를 가져옴.
 
     def load(self):
@@ -96,7 +96,7 @@ class QuizGame:
 #현 스코어 > 최고 스코어
         if score > self.best_score:
             self.best_score = score
-            print("최고 점수 갱신")
+            print("최고 점수 갱신!")
             self.save()
 #문제 추가
     def add(self):
