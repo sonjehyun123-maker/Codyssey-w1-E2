@@ -3,32 +3,32 @@
         {
             "question": "버그(Bug)라는 용어의 실제 유래는?",
             "choices": [
-                "개발자가 벌레를 싫어해서",
-                "실제 벌레가 기계에 끼어서",
                 "시스템을 갉아먹어서",
-                "벌레처럼 작아서"
+                "벌레처럼 작아서",
+                "개발자가 벌레를 싫어해서",
+                "실제 벌레가 기계에 끼어서"
             ],
-            "answer": 2
+            "answer": 4
         },
         {
             "question": "파이썬 이름의 유래는?",
             "choices": [
+                "미국 미식축구팀",
                 "영국 코미디 그룹",
-                "고대도시이름",
                 "그리스로마신화",
-                "미국 미식축구팀"
+                "고대도시이름"
             ],
-            "answer": 1
+            "answer": 2
         },
         {
             "question": "파이썬 창시자는?",
             "choices": [
-                "Elon",
-                "Guido",
                 "Bill",
-                "Jobs"
+                "Elon",
+                "Jobs",
+                "Guido"
             ],
-            "answer": 2
+            "answer": 4
         },
         {
             "question": "Java와 JavaScript의 관계는?",
@@ -61,5 +61,5 @@
             "answer": 2
         }
     ],
-    "best_score": 5
+    "best_score": 10
 }

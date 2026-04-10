@@ -74,7 +74,7 @@ class QuizGame:
         if not self.quizzes:
             print("퀴즈 없음")
             return
-
+        #count에 풀 문제 숫자 저장
         count = get_int("몇 문제 풀래? ", 1, len(self.quizzes))
         selected = random.sample(self.quizzes, count)
 
